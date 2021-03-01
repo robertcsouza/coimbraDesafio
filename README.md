@@ -35,7 +35,7 @@ Para o banco de dados foi utilizado o SQLITE,
   
   em seguida execute:
   
-  flutter emulators --launch <NOME DO EMULADOR> (esse comando inicia o emulador android)
+  flutter emulators --launch NOME DO EMULADOR (esse comando inicia o emulador android)
   
   e por fim:
   
