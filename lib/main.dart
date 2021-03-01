@@ -1,4 +1,3 @@
-
 import 'package:dropdown_search/dropdown_search.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
@@ -15,6 +14,9 @@ import 'package:roberto_desafio_coimbra_app/config/Migrations.dart';
 import 'package:roberto_desafio_coimbra_app/config/Routes.dart';
 import 'package:roberto_desafio_coimbra_app/helper/ConvertDate.dart';
 import 'package:sqflite/sqflite.dart';
+
+import 'styles/Colors.dart';
+import 'styles/Colors.dart';
 
 void main() {
   runApp(MyApp());
@@ -106,7 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
         firstDate: DateTime(2015, 8),
         initialDate: _selectedDate,
         lastDate: DateTime(2101));
-    if (picked != null && picked != _selectedDate) {
+    if (picked != null) {
       setState(() {
         _selectedDate = picked;
         _selectedDateStr = dateConvert(_selectedDate, '-');
@@ -151,47 +153,87 @@ class _MyHomePageState extends State<MyHomePage> {
           return SizedBox();
         } else {
           if (snapshot.data != null) {
-            contratos.clear();
+            if (snapshot.data.length > 0) {
+              contratos.clear();
 
-            for (var item in snapshot.data) {
-              Contrato contrato = Contrato(
-                  idContrato: item['idContrato'],
-                  condicoesFK:
-                  item['condicoesFinanceiras_idCondicoesFinanceiras'],
-                  contratadoFK: item['contratado_idContratado'],
-                  contratanteFK: item['contratante_idContratante'],
-                  dataCriacao: item['data_criacao'],
-                  tipoContratoFK: item['tipoContrato_idTipoContrato'],
-                  statusFK: item['status_idStatus']);
+              for (var item in snapshot.data) {
+                Contrato contrato = Contrato(
+                    idContrato: item['idContrato'],
+                    condicoesFK:
+                        item['condicoesFinanceiras_idCondicoesFinanceiras'],
+                    contratadoFK: item['contratado_idContratado'],
+                    contratanteFK: item['contratante_idContratante'],
+                    dataCriacao: item['data_criacao'],
+                    tipoContratoFK: item['tipoContrato_idTipoContrato'],
+                    statusFK: item['status_idStatus']);
 
-              contratos.add(contrato);
+                contratos.add(contrato);
+              }
+
+              EasyLoading.dismiss();
+
+              return Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: MediaQuery.of(context).size.height * 0.65,
+                  child: ListView.builder(
+                    itemCount: contratos.length,
+                    itemBuilder: (context, index) {
+                      return Card(
+                        child: ListTile(
+                          leading: Icon(
+                            Icons.assignment_sharp,
+                            size: 36,
+                            color: primary,
+                          ),
+                          onTap: () {
+                            Navigator.pushNamed(context, '/contrato/detail',
+                                arguments: snapshot.data[index]);
+                          },
+                          title: Text(
+                              'Contrato Nº: ${contratos[index].idContrato}'),
+                          subtitle: Text(
+                              'Criado Em: ${dateConvert(DateTime.fromMillisecondsSinceEpoch(contratos[index].dataCriacao), '-')}'),
+                        ),
+                      );
+                    },
+                  ));
+            } else {
+              EasyLoading.dismiss();
+
+              return Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: MediaQuery.of(context).size.height * 0.65,
+                  color: light,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        width: 150,
+                        height: 150,
+                        child: Image.asset('images/contratos.png'),
+                      ),
+                      Text('Você ainda nao possui Contrtos')
+                    ],
+                  ));
             }
-
-            EasyLoading.dismiss();
-
+          } else {
             return Container(
                 width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height * 0.65,
-                child: ListView.builder(
-                  itemCount: contratos.length,
-                  itemBuilder: (context, index) {
-                    return Card(
-                      child: ListTile(
-                        onTap: () {
-                          Navigator.pushNamed(context, '/contrato/detail',
-                              arguments: snapshot.data[index]);
-                        },
-                        title: Text(
-                            'Contrato numero : ${contratos[index].idContrato}'),
-                        subtitle: Text(
-                            'criado: ${dateConvert(DateTime.fromMillisecondsSinceEpoch(contratos[index].dataCriacao), '-')}'),
-                      ),
-                    );
-                  },
+                color: light,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Container(
+                      width: 150,
+                      height: 150,
+                      child: Image.asset('images/contratos.png'),
+                    ),
+                    Text('Você ainda nao possui Contrtos')
+                  ],
                 ));
-          } else {
-            EasyLoading.dismiss();
-            return SizedBox();
           }
         }
       },
@@ -306,12 +348,12 @@ class _MyHomePageState extends State<MyHomePage> {
                   contentPadding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
                   focusedBorder: new OutlineInputBorder(
                       borderRadius: const BorderRadius.all(
-                        const Radius.circular(10.0),
-                      )),
+                    const Radius.circular(10.0),
+                  )),
                   border: new OutlineInputBorder(
                       borderRadius: const BorderRadius.all(
-                        const Radius.circular(10.0),
-                      )),
+                    const Radius.circular(10.0),
+                  )),
                 ),
               ),
             ),

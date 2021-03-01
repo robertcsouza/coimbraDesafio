@@ -1,4 +1,3 @@
-
 import 'package:dropdown_search/dropdown_search.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
@@ -108,7 +107,7 @@ class _UpdateContratoState extends State<UpdateContrato> {
         initialDate: selectedDate,
         firstDate: DateTime(2015, 8),
         lastDate: DateTime(2101));
-    if (picked != null && picked != selectedDate) {
+    if (picked != null) {
       print(picked);
       setState(() {
         dataInicial = picked;
@@ -123,7 +122,7 @@ class _UpdateContratoState extends State<UpdateContrato> {
         initialDate: selectedDate,
         firstDate: DateTime(2015, 8),
         lastDate: DateTime(2101));
-    if (picked != null && picked != selectedDate) {
+    if (picked != null) {
       print(picked);
       setState(() {
         dataFinal = picked;
