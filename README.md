@@ -43,9 +43,9 @@ Para o banco de dados foi utilizado o SQLITE,
  
  [material de apoio configuração e execução Flutter](https://www.devmedia.com.br/hello-world-com-flutter/40321)
  
- ### build do projeto
+ ### Build do projeto
      
- Para maior comodidade,dentro da pasta build tem  o apk do projeto,
+ Para maior comodidade,dentro coimbraDesafio > build > app > outputs > apk > release > app-release.apk,
  para instala-lo basta muda nas configurações do smartphone (aceitar aplicativo de fontes desconhecidas)
 
  para aceitar instalar aplicativos fora da play store entre em: Configurações > Segurança > fontes desconhecidas 
