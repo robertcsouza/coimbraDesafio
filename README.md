@@ -78,6 +78,19 @@ Ao abrir a tela de cadastro de Contrato temos os campos onde podemos encotrar os
 <img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614624396.png" alt="drawing" width="200"/>
 <img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614624401.png" alt="drawing" width="200"/>
 
+apos cadastrar o Contrato ele pode ser listado na tela de contratos
+
+<img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614624824.png" alt="drawing" width="200"/>
+
+Também pode ser realizado a filtragem dos contratos,pelos requisitos propostos pelo problema
+
+<img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614624851.png" alt="drawing" width="200"/>
+
+e se Clicar no contrato é possivel  vizualizar os detalhes, editar ou deletar o Contrato em questão
+
+<img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614624833.png" alt="drawing" width="200"/>
+
+
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
