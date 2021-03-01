@@ -52,7 +52,32 @@ Para o banco de dados foi utilizado o SQLITE,
 
 ## Uso do aplicativo
 
-A few resources to get you started if this is your first Flutter project:
+Por padrao o aplicativo inicia sem dados,porem esse dados podem ser adicionados normalmente,
+
+### Contratante e Contratado
+
+para iniciar podemos adicionar um contratante clicando no Botao " + " na tela contratante, ou contratad clicando no Botão " + " na tela contratado
+
+<img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614618067.png" alt="drawing" width="200"/>
+
+apos clicar o botão, será redirecionado para a tela de cadastro,
+
+<img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614618099.png" alt="drawing" width="200"/>
+
+deverá se preenchido todos os campos ante de continuar, apos cadastar um Contratante ou Contratado, ele pode ser listado
+
+<img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614623804.png" alt="drawing" width="200"/>
+
+após haverem Contratantes e Contratados cadastrados no sistemas podemos criar os Contratos Clicando com o botão " + " na tela de Contratos
+
+<img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614624385.png" alt="drawing" width="200"/>
+
+Ao abrir a tela de cadastro de Contrato temos os campos onde podemos encotrar os Contratantes e Contratados previamente cadastrados, junto com a data e ou demais campos 
+
+<img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614624405.png" alt="drawing" width="200"/>
+<img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614624396.png" alt="drawing" width="200"/>
+<img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614624401.png" alt="drawing" width="200"/>
+
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
