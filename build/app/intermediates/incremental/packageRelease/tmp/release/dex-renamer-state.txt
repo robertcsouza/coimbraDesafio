@@ -1,0 +1,4 @@
+#Mon Mar 01 15:08:16 AMT 2021
+base.0=/home/roberto/Área de Trabalho/coimbraDesafio/build/app/intermediates/transforms/r8/release/0/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
