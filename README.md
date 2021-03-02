@@ -45,7 +45,7 @@ Para o banco de dados foi utilizado o SQLITE.
  
  ### Build do projeto
      
- Para maior comodidade,dentro coimbraDesafio > build > app > outputs > apk > release > app-release.apk,
+ Para maior comodidade,foi feito o build do projeto e o APK encontra-se dentro de  coimbraDesafio > build > app > outputs > apk > release > app-release.apk,
  para instalá-lo basta mudar nas configurações do smartphone (aceitar aplicativo de fontes desconhecidas)
 
  para aceitar instalar aplicativos fora da play store entre em: Configurações > Segurança > fontes desconhecidas 
