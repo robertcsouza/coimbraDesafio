@@ -56,7 +56,7 @@ Por padrão o aplicativo inicia sem dados,porém, esse dados podem ser adicionad
 
 ### Contratante e Contratado
 
-Para iniciar, podemos adicionar um Contratante clicando no Botao " + " na tela contratante, ou contratad clicando no Botão " + " na tela contratado
+Para iniciar, podemos adicionar um Contratante clicando no Botao " + " na tela contratante, ou contratado clicando no Botão " + " na tela contratado
 
 <img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614618067.png" alt="drawing" width="200"/>
 
@@ -72,7 +72,7 @@ após haverem Contratantes e Contratados cadastrados no sistemas podemos criar o
 
 <img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614624385.png" alt="drawing" width="200"/>
 
-Ao abrir a tela de cadastro de Contrato temos os campos onde podemos encontrar os Contratantes e Contratados previamente cadastrados, junto com a data e ou demais campos.
+Ao abrir a tela de cadastro de Contrato temos os campos onde podemos encontrar os Contratantes e Contratados previamente cadastrados, junto com a data e os demais campos.
 
 <img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614624405.png" alt="drawing" width="200"/>
 <img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614624396.png" alt="drawing" width="200"/>
