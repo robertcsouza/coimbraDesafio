@@ -2,7 +2,7 @@
 
 Participante : Roberto Chaves Souza
 
-email: robertogeek18@gmail.com
+E-mail: robertogeek18@gmail.com
 
 [https://www.linkedin.com/in/roberto-chaves-souza-a79b85198/](https://www.linkedin.com/in/roberto-chaves-souza-a79b85198/)
 
@@ -11,9 +11,9 @@ email: robertogeek18@gmail.com
 
 Para a solução do problema, foi utilizado a linguagem flutter que trata-se de um kit de desenvolvimento criado pela google que permite o desenvolvimento multiplataforma (android, IOS,Web,Desktop) usando a linguagem dart. Para esse caso específico foi abordado o desenvolvimento Mobile, focado no android,
 
-Para o banco de dados foi utilizado o SQLITE,
+Para o banco de dados foi utilizado o SQLITE.
 
-### Ambiente de desenvolvimento
+### Ambiente de Desenvolvimento
  
  No ambiente de desenvolvimento da solução utilizou-se:
  
@@ -27,7 +27,7 @@ Para o banco de dados foi utilizado o SQLITE,
  
  ### Execução da aplicação
   
-  após a Configuração do ambiente de desenvolvimento, com o termial ou CMD abra a pasta do projeto,
+  Após a Configuração do Ambiente de Desenvolvimento, com o terminal ou CMD abra a pasta do projeto,
   
   e execute o seguinte comando:
   
@@ -46,47 +46,47 @@ Para o banco de dados foi utilizado o SQLITE,
  ### Build do projeto
      
  Para maior comodidade,dentro coimbraDesafio > build > app > outputs > apk > release > app-release.apk,
- para instala-lo basta muda nas configurações do smartphone (aceitar aplicativo de fontes desconhecidas)
+ para instalá-lo basta mudar nas configurações do smartphone (aceitar aplicativo de fontes desconhecidas)
 
  para aceitar instalar aplicativos fora da play store entre em: Configurações > Segurança > fontes desconhecidas 
 
 ## Uso do aplicativo
 
-Por padrao o aplicativo inicia sem dados,porem esse dados podem ser adicionados normalmente,
+Por padrão o aplicativo inicia sem dados,porém, esse dados podem ser adicionados normalmente.
 
 ### Contratante e Contratado
 
-para iniciar podemos adicionar um contratante clicando no Botao " + " na tela contratante, ou contratad clicando no Botão " + " na tela contratado
+Para iniciar, podemos adicionar um Contratante clicando no Botao " + " na tela contratante, ou contratad clicando no Botão " + " na tela contratado
 
 <img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614618067.png" alt="drawing" width="200"/>
 
-apos clicar o botão, será redirecionado para a tela de cadastro,
+após clicar o botão, será redirecionado para a tela de cadastro,
 
 <img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614618099.png" alt="drawing" width="200"/>
 
-deverá se preenchido todos os campos ante de continuar, apos cadastar um Contratante ou Contratado, ele pode ser listado
+deverá se preenchido todos os campos antes de continuar, após cadastrar um Contratante ou Contratado, ele pode ser listado.
 
 <img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614623804.png" alt="drawing" width="200"/>
 
-após haverem Contratantes e Contratados cadastrados no sistemas podemos criar os Contratos Clicando com o botão " + " na tela de Contratos
+após haverem Contratantes e Contratados cadastrados no sistemas podemos criar os Contratos Clicando com o botão " + " na tela de Contratos.
 
 <img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614624385.png" alt="drawing" width="200"/>
 
-Ao abrir a tela de cadastro de Contrato temos os campos onde podemos encotrar os Contratantes e Contratados previamente cadastrados, junto com a data e ou demais campos 
+Ao abrir a tela de cadastro de Contrato temos os campos onde podemos encontrar os Contratantes e Contratados previamente cadastrados, junto com a data e ou demais campos.
 
 <img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614624405.png" alt="drawing" width="200"/>
 <img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614624396.png" alt="drawing" width="200"/>
 <img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614624401.png" alt="drawing" width="200"/>
 
-apos cadastrar o Contrato ele pode ser listado na tela de contratos
+Após cadastrar o Contrato ele pode ser listado na tela de contratos.
 
 <img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614624824.png" alt="drawing" width="200"/>
 
-Também pode ser realizado a filtragem dos contratos,pelos requisitos propostos pelo problema
+Também pode ser realizado a filtragem dos contratos,pelos requisitos propostos pelo problema,
 
 <img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614624851.png" alt="drawing" width="200"/>
 
-e se Clicar no contrato é possivel  vizualizar os detalhes, editar ou deletar o Contrato em questão
+e se Clicar no contrato é possivel vizualizar os detalhes, editar ou deletar o Contrato em questão. 
 
 <img src="https://github.com/robertcsouza/coimbraDesafio/blob/main/images/screens/Screenshot_1614624833.png" alt="drawing" width="200"/>
 
